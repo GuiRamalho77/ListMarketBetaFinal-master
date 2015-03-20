@@ -19,6 +19,7 @@ import java.util.Vector;
 public class DAO implements Serializable {
 
     private static final String URL = "http://10.0.2.2:8080/WebServiceListMarket/services/DAO?wsdl";
+
     private static final String NAMESPACE = "http://wslistmarket.com.br";
 
 
@@ -50,6 +51,7 @@ public class DAO implements Serializable {
             return Boolean.parseBoolean(response.toString());
 
         } catch (Exception e) {
+
             e.printStackTrace();
             return false;
 
