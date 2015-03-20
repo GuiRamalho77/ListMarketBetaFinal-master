@@ -31,6 +31,12 @@ public class DAO implements Serializable {
 
     public boolean inserirListas(listascompras listascompras) {
 
+
+
+
+
+
+
         SoapObject inserirListasCompras = new SoapObject(NAMESPACE, INSERIRLISTAS);
         SoapObject user = new SoapObject(NAMESPACE, "listascompras");
         user.addProperty("idlista", listascompras.getIdlista());
